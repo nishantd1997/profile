@@ -436,6 +436,7 @@
         .project-banner.g2 { background:var(--gradient-hot); }
         .project-banner.g3 { background:var(--gradient-cool); }
         .project-banner.g4 { background:linear-gradient(135deg,#a29bfe,#6c5ce7); }
+        .project-banner.g5 { background:linear-gradient(135deg,#fd79a8,#e17055); }
         .project-body { padding:25px; }
         .project-body h3 { font-size:1.12rem; margin-bottom:10px; font-weight:700; }
         .project-body p { color:var(--text-secondary); font-size:0.88rem; line-height:1.75; margin-bottom:16px; }
@@ -486,6 +487,9 @@
         .edu-details .school { color:var(--primary); font-size:0.88rem; font-weight:500; }
         .edu-details .info, .cert-details .info { color:var(--text-secondary); font-size:0.82rem; margin-top:4px; line-height:1.6; }
         .cert-details .issuer { color:var(--accent); font-size:0.88rem; font-weight:500; }
+
+        /* ======= CERTIFICATIONS ======= */
+        .certs-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; max-width:1000px; margin:30px auto 0; }
 
         /* ======= CONTACT ======= */
         .contact-container {
@@ -644,9 +648,10 @@
                 <span class="typed-text" id="typed-text"></span><span class="cursor">&nbsp;</span>
             </p>
             <p class="description">
-                Data Engineer with 7 years of experience designing, building, and scaling large-scale
-                batch and real-time data platforms in telecom and enterprise environments. Proven expertise
-                in Scala, Python, Spark, Kafka, Databricks, Delta Lake, and Azure.
+                Lead Data Engineer with 7+ years designing, building, and scaling enterprise batch and
+                real-time data platforms across telecom, retail, and e-commerce. Leading a team of 6
+                engineers and delivering high-throughput streaming systems, cloud-native migrations
+                (on-prem → Azure/Databricks), and AI-driven data products.
             </p>
             <div class="hero-buttons">
                 <a href="#contact" class="btn btn-primary">
@@ -685,7 +690,7 @@
                 <i class="fab fa-microsoft" style="color:var(--accent);"></i> Azure & Databricks
             </div>
             <div class="floating-badge b3">
-                <i class="fas fa-bolt" style="color:var(--secondary);"></i> TB-Scale Data
+                <i class="fas fa-users" style="color:var(--secondary);"></i> Led Team of 6
             </div>
         </div>
     </div>
@@ -695,7 +700,7 @@
 <section id="about">
     <div class="section-header reveal">
         <h2>About <span class="highlight">Me</span></h2>
-        <p>Data Engineer specializing in telecom-scale data platforms and real-time streaming.</p>
+        <p>Lead Data Engineer specializing in telecom-scale data platforms, real-time streaming, and supply chain risk analytics.</p>
         <div class="section-line"></div>
     </div>
     <div class="about-grid">
@@ -705,16 +710,16 @@
                 <div class="label">Years Experience</div>
             </div>
             <div class="stat-card">
-                <div class="number" data-target="120">0</div>
-                <div class="label">Data Sources Integrated</div>
+                <div class="number" data-target="6">0</div>
+                <div class="label">Engineers Led</div>
             </div>
             <div class="stat-card">
                 <div class="number special" data-target="40" data-suffix="%">0</div>
                 <div class="label">Customer Call Reduction</div>
             </div>
             <div class="stat-card">
-                <div class="number" data-target="50">0</div>
-                <div class="label">Pipelines Built</div>
+                <div class="number special" data-target="75" data-suffix="M+">0</div>
+                <div class="label">Daily Active Users Supported</div>
             </div>
             <div style="grid-column:1/-1;">
                 <div class="code-block">
@@ -722,8 +727,8 @@
                     <span class="keyword">class</span> <span class="function">DataEngineer</span>:<br>
                     &nbsp;&nbsp;<span class="keyword">def</span> <span class="function">__init__</span>(self):<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;self.name = <span class="string">"Nishant Dehriya"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="string">"Data Engineering Lead"</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;self.company = <span class="string">"Jio"</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;self.role = <span class="string">"Lead Data Engineer"</span><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;self.company = <span class="string">"Tesco (via Xebia)"</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;self.location = <span class="string">"Bangalore, India"</span><br>
                     &nbsp;&nbsp;&nbsp;&nbsp;self.languages = [<span class="string">"Scala"</span>, <span class="string">"PySpark"</span>, <span class="string">"SQL"</span>]<br>
                     &nbsp;&nbsp;&nbsp;&nbsp;self.stack = [<span class="string">"Kafka"</span>, <span class="string">"Spark"</span>, <span class="string">"Databricks"</span>, <span class="string">"Delta Lake"</span>]<br><br>
@@ -735,18 +740,19 @@
         <div class="about-text reveal">
             <h3>Building enterprise data platforms at scale 🚀</h3>
             <p>
-                I'm a Data Engineering Lead at Jio, based in Bangalore, India — specializing in designing and
-                implementing enterprise-scale batch and real-time data pipelines. I work with critical telecom
-                workflows for alarms, service requests, and ticketing systems.
+                I'm a Lead Data Engineering Consultant at Tesco (via Xebia), based in Bangalore, India — currently
+                building a global supply chain risk analytics platform that tracks disruptions from geopolitical
+                events, natural disasters, and weather across 5 countries in Europe.
             </p>
             <p>
-                With strong ownership of end-to-end data pipelines, cloud migrations, and production-grade
-                systems processing TB-scale data, I collaborate with cross-functional teams, mentor engineers,
-                and translate business problems into reliable data solutions.
+                Previously, as Data Engineering Lead at Jio, I led a team of 6 engineers building enterprise-scale
+                batch and real-time pipelines supporting 75M+ daily active telecom users — architecting
+                monitoring platforms, incident detection systems, and a Delta Lake lakehouse processing 10M+
+                daily events with 60% faster query performance.
             </p>
             <p>
-                Previously at Netlink, I built ETL pipelines using PySpark and Hadoop, processing data from
-                120+ heterogeneous sources and reducing processing errors by 20%.
+                Earlier at Netlink, I built PySpark/Hadoop ETL pipelines integrating 120+ heterogeneous sources,
+                improving job runtime by 40% and reducing production defects by up to 30%.
             </p>
             <div class="about-info">
                 <div class="about-info-item">
@@ -763,7 +769,7 @@
                 </div>
                 <div class="about-info-item">
                     <i class="fas fa-building"></i>
-                    <span><strong>Company:</strong> Jio</span>
+                    <span><strong>Company:</strong> Tesco (via Xebia)</span>
                 </div>
                 <div class="about-info-item">
                     <i class="fas fa-briefcase"></i>
@@ -795,6 +801,7 @@
                 <div class="skill-tags">
                     <span class="skill-tag">Scala</span>
                     <span class="skill-tag">PySpark</span>
+                    <span class="skill-tag">Python</span>
                     <span class="skill-tag">SQL</span>
                     <span class="skill-tag">Shell Scripting</span>
                 </div>
@@ -824,6 +831,7 @@
                     <span class="skill-tag">Azure</span>
                     <span class="skill-tag">Databricks</span>
                     <span class="skill-tag">HDFS</span>
+                    <span class="skill-tag">BigQuery</span>
                 </div>
             </div>
 
@@ -836,7 +844,9 @@
                     <span class="skill-tag">Apache Airflow</span>
                     <span class="skill-tag">Docker</span>
                     <span class="skill-tag">Kubernetes</span>
+                    <span class="skill-tag">CI/CD</span>
                     <span class="skill-tag">Rundeck</span>
+                    <span class="skill-tag">Oozie</span>
                 </div>
             </div>
 
@@ -861,12 +871,14 @@
                 </div>
                 <div class="skill-tags">
                     <span class="skill-tag">ETL/ELT</span>
+                    <span class="skill-tag">System Design</span>
                     <span class="skill-tag">Data Governance</span>
                     <span class="skill-tag">Data Migration</span>
                     <span class="skill-tag">API Integration</span>
                     <span class="skill-tag">Scalability</span>
-                    <span class="skill-tag">Data Privacy Compliance</span>
-                    <span class="skill-tag">Agile Methodology</span>
+                    <span class="skill-tag">Data Quality & Observability</span>
+                    <span class="skill-tag">Agile/Scrum</span>
+                    <span class="skill-tag">JIRA</span>
                 </div>
             </div>
 
@@ -883,6 +895,19 @@
                     <span class="skill-tag">RAG</span>
                 </div>
             </div>
+
+            <div class="skill-category reveal">
+                <div class="skill-category-header">
+                    <div class="skill-icon yellow"><i class="fas fa-user-tie"></i></div>
+                    <h3>Leadership</h3>
+                </div>
+                <div class="skill-tags">
+                    <span class="skill-tag">Team Leadership</span>
+                    <span class="skill-tag">Mentoring</span>
+                    <span class="skill-tag">Stakeholder Management</span>
+                    <span class="skill-tag">Technical Roadmap Ownership</span>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -891,10 +916,35 @@
 <section id="experience">
     <div class="section-header reveal">
         <h2>Work <span class="highlight">Experience</span></h2>
-        <p>My professional journey in data engineering across telecom and enterprise domains.</p>
+        <p>My professional journey in data engineering across telecom, retail, and enterprise domains.</p>
         <div class="section-line"></div>
     </div>
     <div class="timeline">
+        <!-- TESCO -->
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="timeline-header">
+                    <div>
+                        <h3>Lead Data Engineering Consultant</h3>
+                        <div class="company">Tesco (via Xebia)</div>
+                        <div class="location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</div>
+                    </div>
+                    <div class="timeline-date">Mar 2026 — Present</div>
+                </div>
+                <ul>
+                    <li>Lead a cross-functional engineering effort building a global supply chain risk analytics platform, delivering early-warning intelligence on disruptions from geopolitical events, natural disasters, and extreme weather across 30+ product categories/regions.</li>
+                    <li>Own ingestion and integration architecture for high-volume risk intelligence feeds from 100+ third-party vendors, standardizing data for predictive analytics and forecasting models.</li>
+                    <li>Partner directly with Data Science teams to productionize ML models for supply chain continuity planning, reducing disruption-response lead time by 20-30%.</li>
+                    <li>Deliver near real-time visibility into high-risk regions, enabling proactive inventory, logistics, and sourcing decisions across 5 countries in Europe.</li>
+                    <li>Run client-facing solution workshops and effort estimation for platform enhancements, translating business requirements into technical designs within an Agile/Scrum delivery model.</li>
+                </ul>
+                <div class="timeline-tech">
+                    <span>Spark</span><span>Databricks</span><span>Azure</span><span>ML Pipelines</span><span>Agile</span>
+                </div>
+            </div>
+        </div>
+
         <!-- JIO -->
         <div class="timeline-item">
             <div class="timeline-dot"></div>
@@ -905,18 +955,18 @@
                         <div class="company">Jio</div>
                         <div class="location"><i class="fas fa-map-marker-alt"></i> Bangalore, India</div>
                     </div>
-                    <div class="timeline-date">Sep 2021 — Present</div>
+                    <div class="timeline-date">Sep 2021 — Mar 2026</div>
                 </div>
                 <ul>
-                    <li>Led the design and implementation of enterprise-scale batch and real-time data pipelines using Kafka, NiFi, Scala Spark, Hive, and Databricks, supporting critical telecom workflows for alarms, service requests, and ticketing systems.</li>
-                    <li>Architected and delivered DataStream Maestro, a unified data processing framework handling both streaming and batch workloads, significantly improving pipeline reliability and operational visibility.</li>
-                    <li>Designed and owned AirWave Conductor, an orchestration-driven real-time alarm and ticket tracking platform, enabling faster issue detection and resolution across fiber and AirFiber networks.</li>
-                    <li>Implemented Delta Lake architecture on Databricks, enabling ACID-compliant, versioned datasets for large-scale SR and alarm data, improving update performance and data consistency.</li>
-                    <li>Played a key role in migrating on-premise batch and streaming pipelines to Azure and Databricks, improving scalability, maintainability, and cost efficiency.</li>
-                    <li>Developed a real-time multichannel notification framework (RapidReach) using Scala Spark, Kafka, Redis, and REST APIs to deliver SMS, WhatsApp, Clevertap, and push notifications — resulting in a 40% reduction in customer care calls.</li>
-                    <li>Built and exposed data consumption APIs using Flask, enabling downstream teams and applications to consume curated datasets securely and efficiently.</li>
-                    <li>Acted as a technical lead by reviewing designs, guiding implementation decisions, and mentoring engineers on Spark optimization, data modeling, and production best practices.</li>
-                    <li>Built a custom AI-powered agent chatbot for State and Central NOC operations, enabling automated visibility, diagnosis, and root-cause analysis of infrastructure and telecom network issues.</li>
+                    <li>Led a team of 6 data engineers, owning end-to-end design and delivery of enterprise-scale batch and real-time pipelines using Kafka, NiFi, Scala Spark, Hive, and Databricks, supporting 75M+ daily active telecom users.</li>
+                    <li>Architected DataStream Maestro, a pipeline reliability and operational monitoring platform, improving pipeline uptime/SLA adherence by 20-30% and cutting manual intervention by 30-40 hours/week.</li>
+                    <li>Designed AirWave Conductor, a real-time incident detection system that reduced mean-time-to-detect (MTTD) by 35%, enabling faster network fault isolation and service restoration.</li>
+                    <li>Built and scaled a Delta Lake lakehouse processing 10M+ daily events, leveraging OPTIMIZE, Z-Ordering, partition pruning, and data compaction to improve query performance by 60% and reduce storage costs by 35%.</li>
+                    <li>Built RapidReach, a proactive customer notification framework, cutting inbound customer care calls by ~40% and saving an estimated 200 support hours/month.</li>
+                    <li>Modernized enterprise data platforms by migrating on-premise Spark/Hive workloads to Azure Databricks, enabling 4x higher throughput and lowering infrastructure costs by 40%.</li>
+                    <li>Developed and shipped Flask-based REST APIs for secure downstream data consumption, enabling self-service analytics for 15+ internal teams.</li>
+                    <li>Mentored 4 engineers on Spark optimization, cloud architecture, and production best practices; conducted design reviews and owned technical hiring/onboarding.</li>
+                    <li>Designed and deployed an AI-powered operational chatbot (LLM + RAG) for telecom NOC teams, cutting average incident triage time by 20%.</li>
                 </ul>
                 <div class="timeline-tech">
                     <span>Kafka</span><span>Scala Spark</span><span>Databricks</span><span>Delta Lake</span>
@@ -931,19 +981,18 @@
             <div class="timeline-card">
                 <div class="timeline-header">
                     <div>
-                        <h3>Data Engineering</h3>
+                        <h3>Data Engineer</h3>
                         <div class="company">Netlink</div>
                         <div class="location"><i class="fas fa-map-marker-alt"></i> Bhopal, India</div>
                     </div>
                     <div class="timeline-date">Jan 2019 — Sep 2021</div>
                 </div>
                 <ul>
-                    <li>Designed and optimized ETL pipelines using PySpark and Hadoop, reducing data processing errors by 20% and improving data quality.</li>
-                    <li>Ingested and processed data from 120+ heterogeneous sources, including MySQL databases, ETL tools, and Mirakl marketplace APIs, into HDFS for downstream analytics and reporting.</li>
-                    <li>Delivered scalable and maintainable data solutions in PySpark, following best practices for testing, modularity, and performance tuning.</li>
-                    <li>Collaborated closely with senior engineers through pair programming, improving code quality and accelerating knowledge transfer.</li>
-                    <li>Enabled data-driven decision making by identifying trends and patterns across large raw datasets using CData connectors and analytical workflows.</li>
-                    <li>Contributed to team efficiency by creating technical documentation, demos, and walkthroughs, fostering a culture of continuous improvement.</li>
+                    <li>Designed and optimized PySpark/Hadoop ETL pipelines, improving job runtime by 40% through partitioning, caching, and modular design.</li>
+                    <li>Integrated data from 120+ heterogeneous sources into a centralized HDFS data lake, enabling unified analytics and reporting across multiple business functions.</li>
+                    <li>Delivered scalable, reusable PySpark modules adopted across 5+ downstream teams, reducing pipeline development time by 30%.</li>
+                    <li>Collaborated with cross-functional engineering teams via pair programming and code reviews, improving code quality and reducing production defects by 25-30%.</li>
+                    <li>Enabled self-service analytics and reporting workflows across large raw datasets for 5+ business stakeholders.</li>
                 </ul>
                 <div class="timeline-tech">
                     <span>PySpark</span><span>Hadoop</span><span>MySQL</span><span>HDFS</span>
@@ -963,14 +1012,37 @@
     </div>
     <div class="projects-grid">
         <div class="project-card reveal">
+            <div class="project-banner g5">
+                <i class="fas fa-globe" style="position:relative;z-index:1;"></i>
+            </div>
+            <div class="project-body">
+                <h3>Global Supply Chain Risk Analytics</h3>
+                <p>
+                    A predictive risk intelligence platform tracking geopolitical events, natural disasters, and
+                    weather disruptions across 30+ product categories and 5 European countries, integrating
+                    100+ third-party vendor feeds for proactive logistics and sourcing decisions.
+                </p>
+                <div class="project-tech">
+                    <span>Spark</span><span>Databricks</span><span>Azure</span><span>ML Pipelines</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/nishantd1997" target="_blank" class="link-github">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-card reveal">
             <div class="project-banner g1">
                 <i class="fas fa-stream" style="position:relative;z-index:1;"></i>
             </div>
             <div class="project-body">
                 <h3>DataStream Maestro</h3>
                 <p>
-                    A unified data processing framework handling both streaming and batch workloads at scale.
-                    Significantly improved pipeline reliability, operational visibility, and reduced data latency across Jio's telecom network.
+                    A pipeline reliability and operational monitoring platform for enterprise-scale batch and
+                    streaming workloads, improving SLA adherence by 20-30% and cutting manual intervention
+                    by 30-40 hours/week across Jio's telecom network.
                 </p>
                 <div class="project-tech">
                     <span>Scala Spark</span><span>Kafka</span><span>Databricks</span><span>Delta Lake</span><span>Airflow</span>
@@ -990,8 +1062,8 @@
             <div class="project-body">
                 <h3>AirWave Conductor</h3>
                 <p>
-                    An orchestration-driven real-time alarm and ticket tracking platform, enabling faster
-                    issue detection and resolution across fiber and AirFiber networks at Jio.
+                    A real-time incident detection system that reduced mean-time-to-detect (MTTD) by 35%,
+                    enabling faster fault isolation and service restoration across fiber and AirFiber networks.
                 </p>
                 <div class="project-tech">
                     <span>Kafka</span><span>Spark Streaming</span><span>Hive</span><span>NiFi</span><span>REST API</span>
@@ -1012,7 +1084,8 @@
                 <h3>RapidReach — Notification Framework</h3>
                 <p>
                     Real-time multichannel notification framework delivering SMS, WhatsApp, Clevertap,
-                    and push notifications — resulting in a 40% reduction in customer care calls.
+                    and push notifications — cutting inbound customer care calls by ~40% and saving an
+                    estimated 200 support hours/month.
                 </p>
                 <div class="project-tech">
                     <span>Scala Spark</span><span>Kafka</span><span>Redis</span><span>REST APIs</span><span>Clevertap</span>
@@ -1032,8 +1105,9 @@
             <div class="project-body">
                 <h3>AI-Powered NOC Chatbot</h3>
                 <p>
-                    Custom AI-powered agent chatbot for State and Central NOC operations, enabling automated
-                    visibility, diagnosis, and root-cause analysis of telecom network issues.
+                    Custom AI-powered agent chatbot (LLM + RAG) for State and Central NOC operations, enabling
+                    automated visibility, diagnosis, and root-cause analysis — cutting average incident triage
+                    time by 20%.
                 </p>
                 <div class="project-tech">
                     <span>LLM</span><span>RAG</span><span>Python</span><span>Custom Agents</span><span>Flask</span>
@@ -1089,7 +1163,7 @@
                         <div class="cert-icon" style="background:rgba(255,255,255,0.08);color:var(--text-primary);"><i class="fab fa-github"></i></div>
                         <div class="cert-details">
                             <h3>GitHub</h3>
-                            <div class="issuer">github.com/Nishant</div>
+                            <div class="issuer">github.com/nishantd1997</div>
                             <div class="info">Open-source projects & contributions</div>
                         </div>
                     </div>
@@ -1099,11 +1173,31 @@
                         <div class="cert-icon" style="background:rgba(255,161,22,0.15);color:#FFA116;"><i class="fas fa-code"></i></div>
                         <div class="cert-details">
                             <h3>LeetCode</h3>
-                            <div class="issuer" style="color:#FFA116;">leetcode.com/Nishant</div>
+                            <div class="issuer" style="color:#FFA116;">leetcode.com/u/nishantdeheriya413</div>
                             <div class="info">Problem solving & algorithms</div>
                         </div>
                     </div>
                 </a>
+            </div>
+        </div>
+
+        <div style="margin-top:45px;">
+            <div class="sub-title"><i class="fas fa-certificate"></i> Certifications</div>
+            <div class="certs-grid">
+                <div class="cert-card reveal" style="margin-bottom:0;">
+                    <div class="cert-icon"><i class="fab fa-microsoft"></i></div>
+                    <div class="cert-details">
+                        <h3>Azure Data Fundamentals</h3>
+                        <div class="issuer">Microsoft (DP-900)</div>
+                    </div>
+                </div>
+                <div class="cert-card reveal" style="margin-bottom:0;">
+                    <div class="cert-icon"><i class="fas fa-stream"></i></div>
+                    <div class="cert-details">
+                        <h3>Vertica Technical Certification</h3>
+                        <div class="issuer">Vertica</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1120,7 +1214,7 @@
         <div class="contact-info reveal">
             <h3>Let's Connect 🤝</h3>
             <p>
-                I'm actively looking for new Data Engineering opportunities where I can leverage
+                I'm actively looking for new Lead Data Engineering opportunities where I can leverage
                 my experience with large-scale data platforms, streaming systems, and cloud architecture.
                 Feel free to reach out!
             </p>
@@ -1129,7 +1223,13 @@
                 <div class="contact-item-text">
                     <span>Email</span>
                     <a href="mailto:nishant.dehriya.work@gmail.com">nishant.dehriya.work@gmail.com</a>
-                    6360590655</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                <div class="contact-item-text">
+                    <span>Phone</span>
+                    <a href="tel:+916360590655">+91 6360590655</a>
                 </div>
             </div>
             <div class="contact-item">
@@ -1177,7 +1277,7 @@
         <a href="https://leetcode.com/u/nishantdeheriya413/" target="_blank" title="LeetCode"><i class="fas fa-code"></i></a>
         <a href="mailto:nishant.dehriya.work@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
     </div>
-    <p>Designed & built with <span class="heart">&#10084;</span> by <strong>Nishant Dehriya</strong> &copy; 2025</p>
+    <p>Designed & built with <span class="heart">&#10084;</span> by <strong>Nishant Dehriya</strong> &copy; 2026</p>
 </footer>
 
 <button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
@@ -1228,7 +1328,7 @@
 })();
 
 // ===== TYPING EFFECT =====
-const words = ["Data Engineering Lead","Kafka & Spark Expert","Real-Time Pipeline Architect","Azure & Databricks Engineer","Big Data Specialist"];
+const words = ["Lead Data Engineer","Kafka & Spark Expert","Real-Time Pipeline Architect","Azure & Databricks Engineer","Supply Chain Analytics Lead"];
 let wi=0, ci=0, deleting=false;
 const typedEl = document.getElementById("typed-text");
 function typeLoop(){
